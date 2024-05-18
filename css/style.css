@@ -1,0 +1,193 @@
+/* Start General Styles */
+
+:root {
+  --main-color: #19283f;
+  --second-color: #ffc400;
+  --grey-color: #eff7fa;
+  --green: #33d1cc;
+  --red: #ff3150;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-button {
+  color: var(--second-color);
+}
+
+.main-sec::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 8%;
+  border-bottom: 3px solid var(--green);
+  transform: translate(-49%, 50%);
+}
+/* End General Styles */
+
+/* Start NavBar */
+/* Start Navbar */
+.navbar {
+  background-color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green);
+}
+.navbar .search {
+  border-left: 1px solid var(--green);
+}
+.navbar .search svg {
+  color: var(--green);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green);
+}
+/* End Navbar */
+
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+  background-color: var(--main-color);
+  min-height: calc(100vh - 72px);
+}
+/* End Landing */
+
+/* Start Features */
+.features .icon-box {
+  height: 200px;
+}
+.features .row h2 {
+  color: var(--second-color);
+}
+.features .row svg.number {
+  color: var(--grey-color);
+  font-size: 12rem;
+  transform: translateX(-50%);
+}
+.features .row svg.feat-icon {
+  color: var(--green);
+  font-size: 4rem;
+  transform: translateX(-50%);
+}
+/* End Features */
+
+/* Start Our Work */
+.Our-Work {
+  background-color: var(--grey-color);
+}
+.Our-Work ul li {
+  padding: 8px 16px;
+}
+.Our-Work .active {
+  color: var(--second-color);
+  background-color: var(--red);
+}
+.Our-Work .card {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.Our-Work .card::before {
+  content: "Application";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #33d1ccd6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transform: translateX(calc(-100% - 10px));
+  -webkit-transform: translateX(calc(-100% - 10px));
+  -moz-transform: translateX(calc(-100% - 10px));
+  -ms-transform: translateX(calc(-100% - 10px));
+  -o-transform: translateX(calc(-100% - 10px));
+}
+.Our-Work .card:hover::before {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+/* End Our Work */
+
+/* Start Our Team */
+.Our-Team {
+  background-color: var(--grey-color);
+}
+.Our-Team h2 {
+  color: var(--second-color);
+}
+.Our-Team .row .name {
+  background-color: var(--green);
+}
+/* End Our Team */
+
+/* Start Gallery */
+.Gallery .start-sec {
+  background-color: var(--main-color);
+}
+/* End Gallery */
+
+/* Start Subscribe */
+.Subscribe {
+  background-color: var(--second-color);
+}
+.Subscribe input.Email {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.Subscribe ::placeholder {
+  color: white;
+}
+.Subscribe input.btn {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+/* Start Footer */
+.Footer {
+  background-color: var(--main-color);
+}
+.Footer .Graphberry {
+  color: var(--green);
+}
+.Footer .Bondi {
+  color: var(--second-color);
+}
+.Footer .facebook {
+  background-color: #4267b2;
+}
+.Footer .twitter {
+  background-color: #1da1f2;
+}
+.Footer .linkedin {
+  background-color: #0a66c2;
+}
+.Footer .youtube {
+  background-color: #ff0000;
+}
